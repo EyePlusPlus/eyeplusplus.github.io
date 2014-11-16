@@ -1,0 +1,153 @@
+body{
+	font-family: "Segoe UI";
+	text-align: center;
+	margin: 0;
+	/*background-color: #222222;*/
+	background-color: #E7E7DE;
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);
+	height: 100%;
+	width: 100%;
+	border: 1px solid black;
+}
+div{
+	margin: 0;
+	display: inline-block;
+}
+div.step1, div.step2{
+	position: absolute;
+	background-color: #6CC7CB;
+	max-height: 1280px;
+	padding: 50px;
+	max-width: 720px;
+	vertical-align: middle;
+	top: 25%;
+	left:30%;
+}
+div.step3{
+	position: absolute;
+	background-color: #f1f1f1;
+	height: auto;
+	padding: 20px;
+	width: auto;
+	vertical-align: middle;
+	top: 20%;
+	left: 40%;
+	opacity: 1;
+}
+.step3 h1{
+	font-size: x-large;
+	color: #6CC7CB;
+}
+.step1 h4{
+	margin-top: 0;
+	position: relative;
+	font-size: 50px;
+	color: #2790A8;
+	text-transform: uppercase;
+}
+.playAgain{
+	background-color: #6CC7CB;
+	color: #fff;
+	padding: 8px;
+	font-size: 22px;
+	text-decoration: none;
+	font-weight: 600;
+}
+.step1 .token{
+	height: 240px;
+	width: 200px;
+	position: relative;
+	margin: 0 20px;
+	font-size: 200px;
+	background-color: #ED7E7E;
+	cursor: pointer;
+	bottom: 20px;
+}
+.step1 .token p{
+	display: inline;
+	position: relative;
+	bottom: 20px;
+	color: #2790A8;
+}
+.step1 .token:hover{
+	background-color: #DB6060;
+	transform: scale(1.1);
+}
+div.block{
+	/*border: 1px solid #aaa;*/
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+	border-color: #DB6060;
+	border-style: solid;
+	border-width: 0px;
+}	
+div.playboard{
+	position: relative;
+	top: 0;
+	width: auto;
+
+}
+.block p{
+	/*border: 1px solid red;*/
+	display: inline;
+	position: relative;
+	bottom: 10px;
+	font-size: 94px;
+	color: #DB6060;
+}
+
+.hide{
+	display: none;
+}
+/*Borders*/
+	div.d1{
+		border-right-width: 3px;
+		border-bottom-width: 3px;
+	}
+	div.d2{
+		border-right-width: 3px;
+		border-left-width: 3px;
+		border-bottom-width: 3px;
+	}
+	div.d3{
+		border-left-width: 3px;
+		border-bottom-width: 3px;
+	}
+	div.d4{
+		border-top-width: 3px;
+		border-right-width: 3px;
+		border-bottom-width: 3px;
+	}
+	div.d5{
+		border-top-width: 3px;
+		border-right-width: 3px;
+		border-bottom-width: 3px;
+		border-left-width: 3px;
+	}
+	div.d6{
+		border-top-width: 3px;
+		border-left-width: 3px;
+		border-bottom-width: 3px;
+	}
+	div.d7{
+		border-top-width: 3px;
+		border-right-width: 3px;
+	}
+	div.d8{
+		border-top-width: 3px;
+		border-right-width: 3px;
+		border-left-width: 3px;
+	}
+	div.d9{
+		border-top-width: 3px;
+		border-left-width: 3px;
+	}
+/*Borders ends*/
+.inline{
+	display: inline;
+}

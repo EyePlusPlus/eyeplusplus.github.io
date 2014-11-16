@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Chat</title>
+	<link rel="stylesheet" href="stylesheets/style.css"></link>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+</head>
+<body>
+	<div class="step1">
+		<h4>Tic-Tac-Toe</h4>
+		<div class="token" id="X"><p>X</p></div>
+		<div class="token" id="O"><p>O</p></div>
+	</div>
+	<div class="step2 hide">
+		<div class="playboard"> <!-- playboard -->
+			<div id="top" class="frame">
+				<div id="1" class="block d1"><p></p></div>
+				<div id="2" class="block d2"><p></p></div>
+				<div id="3" class="block d3"><p></p></div>
+			</div>
+			<br>
+			<div id="middle" class="frame">
+				<div id="4" class="block d4"><p></p></div>
+				<div id="5" class="block d5"><p></p></div>
+				<div id="6" class="block d6"><p></p></div>
+			</div>
+			<br>
+			<div id="bottom" class="frame">
+				<div id="7" class="block d7"><p></p></div>
+				<div id="8" class="block d8"><p></p></div>
+				<div id="9" class="block d9"><p></p></div>
+			</div>
+			<br>
+		</div>
+	</div>
+	<div class="overlay hide"></div>
+	<div class="step3 hide">
+		<h1 class="inline">You Win! </h1>
+		<a href="" class="playAgain inline">Play Again</a>
+	</div>
+
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
