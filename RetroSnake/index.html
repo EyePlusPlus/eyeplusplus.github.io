@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<style>
+	body{ text-align: center; background-color: black; color: #0CCD58; font-family: 'Armata', sans-serif;}
+	canvas{ border: 5px double #DFEFE2; }
+	li{ display: block; padding-top: 5px;}
+	.table{margin-top: 2em; display: inline-block;}
+	.table tr td:nth-child(1){text-align: right; padding-right: 5px;}
+	.table tr td:nth-child(2){text-align: left; padding-left: 5px;}
+	li .img{vertical-align: middle; width: 140px;display: inline-block; text-align: center; border: 1px solid white;}
+	#arrows{width: 90px;}
+	#space{width: 130px;}
+	#f5{height: 30px;}
+	</style>
+</head>
+<body>
+	<h1>Retro Snake</h1>
+	<h2>Score: <span id="score">0</span></h2>
+	<canvas id="canvas" height="300" width="500">Oops! You need to update your browser to play this game.</canvas>
+	<div>
+		<table class="table">
+			<tr>
+				<td><img id="arrows" src="arrow-keys.png"></td>
+				<td>Move</td>
+			</tr>
+			<tr>
+				<td><img id="space" src="spacebar.png"></td>
+				<td>Play/Pause</td>
+			</tr>
+			<tr>
+				<td><img id="f5" src="f5.png"></td>
+				<td>Restart Game</td>
+			</tr>
+		</table>
+	</div>
+	<!-- <ul>
+		<li><div class="img"><img id="arrows" src="arrow-keys.png"></div> Move</li>
+		<li><div class="img"><img id="space" src="spacebar.png"></div> Play/Pause</li>
+		<li><div class="img"><img id="f5" src="f5.png"></div> Restart Game</li>
+	</ul> -->
+	<script src="script.js"></script>
+</body>
+</html>
