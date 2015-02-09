@@ -7,15 +7,17 @@ var initx = 0; //Initial Position
 var inity = 10*(snake.length-1); //Intitial Position
 var dx = 0; //Change X
 var dy = 10; //Chane Y
-var ctx; //Canvas Object
+var canvas = $('#canvas')[0]; //Canvas Object
 var speed = 200; // Refresh rate in milliseconds
 var colors = ['#0CCD58','#0B6A26','#DFEFE2']; //Colors to use for snake body and food
 var tempDir = [0,-1]; //Default direction: down
 var food = newFood(); //Generate initial food
 var startGame; //holds setInterval
 var score = 0; 
+var startTouch; //Holds start touch values
+var endTouch; //Holds end touch values
 function init(){
-	ctx = $('#canvas')[0].getContext("2d");
+	ctx = canvas.getContext("2d");
 	for(var i=0;i<snake.length;i++){
 		snake[i] = [initx, inity];
 		rect(initx, inity,snakeHeight,snakeWidth,(i%2));
@@ -98,6 +100,38 @@ function changeDir(dir){
 	}
 }
 startGame = init();
+canvas.addEventListener("touchstart", handleTouchStart, false);
+canvas.addEventListener("touchend", handleTouchEnd, false);
+function handleTouchStart(e){
+	e.preventDefault();
+	var captured = e.touches[0];
+	startTouch = [captured.pageX, captured.pageY];
+}
+function handleTouchEnd(e){
+	e.preventDefault();
+	var released = e.changedTouches[0];
+	endTouch = [released.pageX, released.pageY];
+	handleSwipe();
+}
+function handleSwipe(){
+	swipex = startTouch[0] - endTouch[0];
+	swipey = startTouch[1] - endTouch[1];
+	if(Math.abs(swipex) > Math.abs(swipey)){
+		// Horizontal Swipe
+		if(swipex == 0) return false;
+		else if(swipex > 0) dir=[-1,0]; //left
+		else dir=[1,0]; //right
+	}
+	else{
+		// Vertical Swipe
+		if(swipey == 0) return false;
+		else if(swipey > 0) dir=[0,-1]; //down
+		else dir=[0,1]; //up
+	}
+	if(((dir[0]!=tempDir[0]) && (dir[1]!=tempDir[1])) || dir == 'pause'){
+		changeDir(dir); 
+	}
+}
 $(document).keydown(function(evt){
 	// alert(evt.charCode);
 	if(evt.keyCode == 37) dir=[-1,0]; //left
