@@ -164,6 +164,7 @@ function robotDecision(){
 	}
 	makeMove(rand);
 }
+
 $('div.block').click(function(){
 	idx = $(this).attr("id");
 	if(victory[idx] != undefined ){
