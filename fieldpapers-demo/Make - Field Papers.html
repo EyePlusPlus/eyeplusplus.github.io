@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)http://localhost:3000/compose/select?lat=18.93016&lon=72.83029&zoom=12#12/18.9302/72.8303 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make - Field Papers</title>
+  <link rel="stylesheet" media="all" href="http://localhost:3000/assets/leaflet.self-9af37702e0188c8c37fe5632ab7545afdcb9148cbf7cfacc759166c62671b512.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/s3_direct_upload_progress_bars.self-37db1e58343c289aaf3d6fa055ffc27e1d24044059cd5a46ed142b4f617d1db1.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/application.self-abe6b1ccefeb66ba188443db471cf6b5c491de39c8e410b156fac95a3ddb505a.css?body=1" data-turbolinks-track="true">
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="9vFxDGKhraOoNO1lw93jk9vN3KiVkuY1tmHw6eN7FfbBnI6FNAdLXE4B2QGjS4Wi9E4my/nsausLj63bS6bqaw==">
+
+  <script src="./Make - Field Papers_files/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/leaflet.self-02d9ac08a439060bb0e79e0d1b98b4ab0a3a75e5690e7a747a6ebcb8affd814a.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/jquery.ui.widget.self-3142e3533de720deedba66622b16a0e760178b7a6f9c539e5850e553f421c559.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/jquery.iframe-transport.self-6cab75197bb014ee4213c23934e370a032480942405eaaba251d379c84cdf3ce.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/jquery.fileupload.self-b68471c578d81f6b24dd6d77ada6f4c6d7887725d4806a53e0d566e382db8c8e.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/basic.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/tmpl.self-c2108a63ad9ae9ab4a723bcf0104f6a92a63eb917331ff69fad6f02fe7219488.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/s3_direct_upload.self-a71af1e40427c6623d982df253581eb58013b84d84f45bcef7d0352ad4e82534.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/nav.self-ee31882503c419421e05c3072779f55a5c0ac3cb19ab52396c7cd207945504bf.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/atlases.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/compose.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/atlas-map.self-488733aacd1a53f61170f6e2762c840ce9f661f691699cadbdb0c0ac6d7642ee.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/bound-boxes.self-aeceb7b1707afd5449263fd8f135a26942d27f0d97884d7b497e13706872cd0a.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/compose.select.self-e4063780d3feacf7a7f6a8b9392a1dba7ea277d593cbc87c8ce291946b5f939a.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/locator-map.self-233e51b9ecc9fd29a6cfa54bd0b8dc8780f4389f7d671db51bdb38ea01dff63d.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/map-options.self-46e9bcc274ae747e5f9f65d5ea7dc241069ebb3c1ed114d49c9c00b4bab9c10f.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/snapshot-map.self-9c1d23fdb612b7929433dabf478e2ab11f67cd9a4083e85fb3a80a9c0001008f.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/leaflet-draggable-any.self-bbcfa474238932862e28d08811c4469f553ebdbef16907b6a5397f88a2167548.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/leaflet-page-composer.self-1d89f9fe4aa12f8217e07e3a51ddb755b82400f61026fb37aa6bd45262ad6c5d.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/leaflet-zoomextras.self-6dc13bf94d954a4bd0559ed5e4f82dee811012a700991a9ca2dfd922105e58b6.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/pages.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/snapshots.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/leaflet-hash.self-d20c6def59ec8d5d2da02bc8ac1917af533921e7105d2dfdaeff489fcd612e91.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/select2.min.self-5d12cf93a2700019372c3dc9085ee1256cf9c700ad206aa528ece7a6f278d6f8.js" data-turbolinks-track="true"></script>
+<script src="./Make - Field Papers_files/application.self-097cd319a276e6debbc33846b71e27ac59849fa289420454a6ec2bf24180938a.js" data-turbolinks-track="true"></script>
+  
+  <style>
+    #map {
+      height: 500px;
+      float: right;
+    }
+
+    .field_with_errors {
+      background-color: red;
+    }
+  </style>
+
+
+</head>
+<body data-controller="compose" data-action="show">
+
+<div class="container">
+
+<!-- Static navbar -->
+<div id="nav">
+    <div class="row">
+        <div class="logo twelve columns">
+            <a href="http://localhost:3000/"><img src="./Make - Field Papers_files/logo-header-897134488133ba8cf1903f29dc8f7178183511c00d297b64044aff26d6da153f.png" alt="Field Papers" height="58" width="200"></a>
+        </div>
+    </div>
+
+    <div class="row navbar-container">
+        <div class="twelve columns">
+            <button id="nav-toggle">Menu</button>
+            <ul class="navbar u-cf">
+
+                <li class="nav-item active">
+                    <a href="http://localhost:3000/compose/search">
+                        <div class="section">MAKE</div>
+                        <div class="desc">an atlas to print</div>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="http://localhost:3000/snapshots/new">
+                        <div class="section">UPLOAD</div>
+                        <div class="desc">pages you've marked</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://localhost:3000/atlases">
+                        <div class="section">WATCH</div>
+                        <div class="desc">recent activity</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://localhost:3000/advanced">
+                        <div class="section">EXTEND</div>
+                        <div class="desc">with advanced tools</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="section"><a href="http://localhost:3000/users/sign_in">LOG IN</a></div>
+                    <div class="desc"><a href="http://localhost:3000/users/sign_up">or create an account</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="row">
+  <div class="twelve columns crumbs">
+    <div class="active crumb">Select</div>
+    <div class="crumb">Describe</div>
+    <div class="crumb">Layout</div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="twelve columns">
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns">
+    <form action="http://localhost:3000/compose/select" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="authenticity_token" value="9vFxDGKhraOoNO1lw93jk9vN3KiVkuY1tmHw6eN7FfbBnI6FNAdLXE4B2QGjS4Wi9E4my/nsausLj63bS6bqaw==">
+    <input hidden="hidden" type="text" name="atlas[zoom]" id="atlas_zoom">
+    <input hidden="hidden" type="text" name="atlas[west]" id="atlas_west">
+    <input hidden="hidden" type="text" name="atlas[south]" id="atlas_south">
+    <input hidden="hidden" type="text" name="atlas[east]" id="atlas_east">
+    <input hidden="hidden" type="text" name="atlas[north]" id="atlas_north">
+    <input hidden="hidden" type="text" name="atlas[rows]" id="atlas_rows">
+    <input hidden="hidden" type="text" name="atlas[cols]" id="atlas_cols">
+    <select name="atlas[paper_size]" id="atlas_paper_size"><option value="letter">Letter</option>
+<option value="a3">A3</option>
+<option value="a4">A4</option></select>
+    <select name="atlas[orientation]" id="atlas_orientation"><option value="landscape">Landscape</option>
+<option value="portrait">Portrait</option></select>
+    <select name="atlas[provider]" id="atlas_provider" tabindex="-1" style="display: none;"><option value="http://{S}.tile.openstreetmap.org/{Z}/{X}/{Y}.png">OpenStreetMap</option>
+<option value="http://{S}.tile.stamen.com/toner-lite/{Z}/{X}/{Y}.png">Black &amp; White</option>
+<option value="http://{S}.tile.stamen.com/boner/{Z}/{X}/{Y}.jpg">Satellite + Labels</option>
+<option value="http://{S}.tile.stamen.com/bing-lite/{Z}/{X}/{Y}.jpg">Satellite Only</option>
+<option value="http://{S}.tile.openstreetmap.fr/hot/{Z}/{X}/{Y}.png">Humanitarian</option>
+<option value="https://{S}.tiles.mapbox.com/v4/kll.ptthjjor/{Z}/{X}/{Y}@2x.png?access_token=pk.eyJ1Ijoia2xsIiwiYSI6IktVRUtfQnMifQ.GJAHJPvusgK_f0NsSXS8QA">Humanitarian-Nepal</option>
+<option value="http://{S}.tiles.mapbox.com/v3/stamen.i808gmk6/{Z}/{X}/{Y}.png">Mapbox Satellite</option>
+<option value="http://{S}.tile.opencyclemap.org/cycle/{Z}/{X}/{Y}.png">OpenCycleMap</option>
+<option value="http://{S}.tiles.maps.sputnik.ru/{z}/{x}/{y}.png">Sputnik.RU</option></select><span class="select2 select2-container select2-container--default" dir="ltr"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-atlas_provider-container"><span class="select2-selection__rendered" id="select2-atlas_provider-container" title="OpenStreetMap">OpenStreetMap</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    <input type="submit" name="commit" value="Next">
+</form>  </div>
+</div>
+
+<div class="row">
+  <div id="map" class="twelve columns leaflet-container leaflet-fade-anim" tabindex="0" style="position: relative;"><div class="leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-tile-pane"><div class="leaflet-layer"><div class="leaflet-tile-container"></div><div class="leaflet-tile-container leaflet-zoom-animated"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1828.png" style="height: 256px; width: 256px; left: 314px; top: 100px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1829.png" style="height: 256px; width: 256px; left: 314px; top: 356px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1828(1).png" style="height: 256px; width: 256px; left: 58px; top: 100px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1827.png" style="height: 256px; width: 256px; left: 314px; top: -156px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1828(2).png" style="height: 256px; width: 256px; left: 570px; top: 100px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1829(1).png" style="height: 256px; width: 256px; left: 570px; top: 356px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1827(1).png" style="height: 256px; width: 256px; left: 570px; top: -156px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1829(2).png" style="height: 256px; width: 256px; left: 58px; top: 356px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1827(2).png" style="height: 256px; width: 256px; left: 58px; top: -156px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1828(3).png" style="height: 256px; width: 256px; left: 826px; top: 100px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1828(4).png" style="height: 256px; width: 256px; left: -198px; top: 100px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1827(3).png" style="height: 256px; width: 256px; left: 826px; top: -156px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1827(4).png" style="height: 256px; width: 256px; left: -198px; top: -156px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1829(3).png" style="height: 256px; width: 256px; left: -198px; top: 356px;"><img class="leaflet-tile leaflet-tile-loaded" src="./Make - Field Papers_files/1829(4).png" style="height: 256px; width: 256px; left: 826px; top: 356px;"></div></div></div><div class="leaflet-objects-pane"><div class="leaflet-shadow-pane"></div><div class="leaflet-overlay-pane"></div><div class="leaflet-marker-pane"></div><div class="leaflet-popup-pane"></div></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://localhost:3000/compose/select?lat=18.93016&lon=72.83029&zoom=12#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://localhost:3000/compose/select?lat=18.93016&lon=72.83029&zoom=12#" title="Zoom out">-</a><a class="zoom-reset" href="http://localhost:3000/compose/select?lat=18.93016&lon=72.83029&zoom=12#" title="Reset"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve"> <defs> </defs> <path d="M6,2h4V0H6V2z M2,18H0v4h4v-2H2V18z M6,22h4v-2H6V22z M2,12H0v4h2V12z M2,6H0v4h2V6z M0,4h2V2h2V0H0V4z M20,10h2V6h-2V10z M12,22h4v-2h-4V22z M18,0v2h2v2h2V0H18z M20,16h2v-4h-2V16z M20,20h-2v2h4v-4h-2V20z M12,2h4V0h-4V2z M6,16h10V6H6V16z"></path> </svg></a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"><div class="leaflet-control-scale leaflet-control"><div class="leaflet-control-scale-line" style="width: 73px;">3 km</div><div class="leaflet-control-scale-line" style="width: 79px;">2 mi</div></div></div><div class="leaflet-bottom leaflet-right"></div></div></div>
+</div>
+
+
+
+<div id="footer" class="row align-center">
+  <div class="twelve columns">
+    <b><a href="http://fieldpapers.org/">Field Papers</a></b> is built by <a href="http://www.stamen.com/">Stamen Design</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+    <a href="http://localhost:3000/about">About the Project</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+    <a href="http://wiki.openstreetmap.org/wiki/Field_Papers" title="Check out the OSM help wiki.">Help</a>
+    <br>
+    <small>Map data <a href="http://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>, <a href="http://maps.stamen.com/toner/">Toner</a> by Stamen, <a href="http://www.bing.com/maps/">Bing</a> by Microsoft, <a href="https://www.mapbox.com/">Mapbox</a>, or a combination thereof.</small>
+  </div>
+  <div class="twelve columns">
+    <small>
+      <a href="http://localhost:3000/compose/select?locale=da">Dansk</a>
+      <a href="http://localhost:3000/compose/select?locale=de">Deutsch</a>
+      English
+      <a href="http://localhost:3000/compose/select?locale=es">Español</a>
+      <a href="http://localhost:3000/compose/select?locale=fr">Français</a>
+      <a href="http://localhost:3000/compose/select?locale=id">Bahasa Indonesia</a>
+      <a href="http://localhost:3000/compose/select?locale=it">Italiano</a>
+      <a href="http://localhost:3000/compose/select?locale=ja">日本語</a>
+      <a href="http://localhost:3000/compose/select?locale=ku">کوردی</a>
+      <a href="http://localhost:3000/compose/select?locale=nl">Nederlands</a>
+      <a href="http://localhost:3000/compose/select?locale=pl">Polski</a>
+      <a href="http://localhost:3000/compose/select?locale=pt">Português</a>
+      <a href="http://localhost:3000/compose/select?locale=sw">Kiswahili</a>
+      <a href="http://localhost:3000/compose/select?locale=tl">Tagalog</a>
+      <a href="http://localhost:3000/compose/select?locale=uk">Українська</a>
+    </small>
+  </div>
+  <div class="twelve columns">
+    <small>
+      <a href="http://fieldpapers.tumblr.com/">Development Blog</a>
+      <a href="https://github.com/fieldpapers/fieldpapers/issues/">GitHub Issues</a>
+      <a href="https://www.transifex.com/projects/p/fieldpapers/">Translations</a>
+    </small>
+  </div>
+</div>
+
+
+</div>
+
+<script>
+var tp = {"openstreetmap":{"label":"OpenStreetMap","template":"http://{S}.tile.openstreetmap.org/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":19},"toner":{"label":"Black \u0026 White","template":"http://{S}.tile.stamen.com/toner-lite/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":20},"satellite-labels":{"label":"Satellite + Labels","template":"http://{S}.tile.stamen.com/boner/{Z}/{X}/{Y}.jpg","options":{"attribution":""},"minzoom":0,"maxzoom":19},"satellite-only":{"label":"Satellite Only","template":"http://{S}.tile.stamen.com/bing-lite/{Z}/{X}/{Y}.jpg","options":{"attribution":""},"minzoom":0,"maxzoom":19},"humanitarian":{"label":"Humanitarian","template":"http://{S}.tile.openstreetmap.fr/hot/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":20},"humanitarian-nepal":{"label":"Humanitarian-Nepal","template":"https://{S}.tiles.mapbox.com/v4/kll.ptthjjor/{Z}/{X}/{Y}@2x.png?access_token=pk.eyJ1Ijoia2xsIiwiYSI6IktVRUtfQnMifQ.GJAHJPvusgK_f0NsSXS8QA","options":{"attribution":""},"minzoom":0,"maxzoom":20},"mapbox-satellite":{"label":"Mapbox Satellite","template":"http://{S}.tiles.mapbox.com/v3/stamen.i808gmk6/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":19},"opencyclemap":{"label":"OpenCycleMap","template":"http://{S}.tile.opencyclemap.org/cycle/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":20},"sputnik.ru":{"label":"Sputnik.RU","template":"http://{S}.tiles.maps.sputnik.ru/{z}/{x}/{y}.png","options":{"attribution":" © \u003ca href=\"http://sputnik.ru\"\u003eСпутник\u003c/a\u003e | © \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenstreetmap\u003c/a\u003e | © \u003ca href=\"http://www.naturalearthdata.com/about/terms-of-use/\"\u003eNatural Earth\u003c/a\u003e "},"minzoom":0,"maxzoom":19}};
+  $(function(){
+    FP.map.compose.select({
+      selector: 'map',
+      initialView: [[18.93016, 72.83029], 12],
+      tileProviders: {"openstreetmap":{"label":"OpenStreetMap","template":"http://{S}.tile.openstreetmap.org/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":19},"toner":{"label":"Black \u0026 White","template":"http://{S}.tile.stamen.com/toner-lite/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":20},"satellite-labels":{"label":"Satellite + Labels","template":"http://{S}.tile.stamen.com/boner/{Z}/{X}/{Y}.jpg","options":{"attribution":""},"minzoom":0,"maxzoom":19},"satellite-only":{"label":"Satellite Only","template":"http://{S}.tile.stamen.com/bing-lite/{Z}/{X}/{Y}.jpg","options":{"attribution":""},"minzoom":0,"maxzoom":19},"humanitarian":{"label":"Humanitarian","template":"http://{S}.tile.openstreetmap.fr/hot/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":20},"humanitarian-nepal":{"label":"Humanitarian-Nepal","template":"https://{S}.tiles.mapbox.com/v4/kll.ptthjjor/{Z}/{X}/{Y}@2x.png?access_token=pk.eyJ1Ijoia2xsIiwiYSI6IktVRUtfQnMifQ.GJAHJPvusgK_f0NsSXS8QA","options":{"attribution":""},"minzoom":0,"maxzoom":20},"mapbox-satellite":{"label":"Mapbox Satellite","template":"http://{S}.tiles.mapbox.com/v3/stamen.i808gmk6/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":19},"opencyclemap":{"label":"OpenCycleMap","template":"http://{S}.tile.opencyclemap.org/cycle/{Z}/{X}/{Y}.png","options":{"attribution":""},"minzoom":0,"maxzoom":20},"sputnik.ru":{"label":"Sputnik.RU","template":"http://{S}.tiles.maps.sputnik.ru/{z}/{x}/{y}.png","options":{"attribution":" © \u003ca href=\"http://sputnik.ru\"\u003eСпутник\u003c/a\u003e | © \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenstreetmap\u003c/a\u003e | © \u003ca href=\"http://www.naturalearthdata.com/about/terms-of-use/\"\u003eNatural Earth\u003c/a\u003e "},"minzoom":0,"maxzoom":19}},
+      defaultProvider: "openstreetmap"
+    });
+  });
+</script>
+    <script>
+        $(function(){
+          FP.nav();
+        });
+    </script>
+
+
+
+
+</body></html>
